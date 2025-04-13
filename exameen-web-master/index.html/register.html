@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registro - Aprende Ruso</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="bg-primary text-white text-center py-4">
+    <h1>Registro - Aprende Ruso</h1>
+  </header>
+
+  <main class="container mt-5">
+    <form id="register-form">
+      <div class="card p-4 shadow-lg">
+        <h4 class="mb-3">Datos Personales</h4>
+        <div class="mb-3">
+          <label for="name" class="form-label">Nombre</label>
+          <input type="text" id="name" class="form-control" required>
+        </div>
+        <div class="mb-3">
+          <label for="surname" class="form-label">Apellidos</label>
+          <input type="text" id="surname" class="form-control" required>
+        </div>
+        <div class="mb-3">
+          <label for="birthplace" class="form-label">Lugar de Nacimiento</label>
+          <input type="text" id="birthplace" class="form-control" required>
+        </div>
+        <div class="mb-3">
+          <label for="city" class="form-label">Ciudad Actual</label>
+          <input type="text" id="city" class="form-control" required>
+        </div>
+        <div class="mb-3">
+          <label for="birthdate" class="form-label">Fecha de Nacimiento</label>
+          <input type="date" id="birthdate" class="form-control" required>
+        </div>
+        <div class="mb-3">
+          <label for="passport" class="form-label">Número de Pasaporte</label>
+          <input type="text" id="passport" class="form-control" required>
+        </div>
+
+        <h4 class="mb-3">Selecciona el Idioma</h4>
+        <div class="mb-3">
+          <label for="language" class="form-label">Idioma</label>
+          <select id="language" class="form-select" required>
+            <option value="" disabled selected>Elige un idioma</option>
+            <option value="Ruso">Ruso</option>
+            <option value="Francés">Francés</option>
+            <option value="Español">Español</option>
+            <option value="Inglés">Inglés</option>
+            <option value="Árabe">Árabe</option>
+            <option value="Alemán">Alemán</option>
+          </select>
+        </div>
+
+        <h4 class="mb-3">Credenciales</h4>
+        <div class="mb-3">
+          <label for="email" class="form-label">Correo Electrónico</label>
+          <input type="email" id="email" class="form-control" required>
+        </div>
+        <div class="mb-3">
+          <label for="password" class="form-label">Contraseña</label>
+          <input type="password" id="password" class="form-control" required>
+        </div>
+
+        <button type="submit" class="btn btn-success w-100 mt-3">Registrarse</button>
+      </div>
+    </form>
+  </main>
+
+  <footer class="bg-dark text-white text-center py-3">
+    <p>&copy; 2025 Aprende Ruso. Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="js/auth.js"></script>
+</body>
+</html>
